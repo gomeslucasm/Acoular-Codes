@@ -2,7 +2,7 @@
 """
 Created on Wed Jun 24 15:59:53 2020
 
-@author: lucas Muller Gomes 
+@author: Lucas Muller Gomes 
 Acoustic Engineegiring - UFSM
 
 """
@@ -16,7 +16,7 @@ data = # data to save in the hdf5 - the shape must be (num_samples, number of ch
 data = numpy.array(data)
 savename = "DataToAcoular.h5"
 
-acoularh5 = tables.open_file(savename, mode = "w", title = filename)
+acoularh5 = tables.open_file(savename, mode = "w", title = savename)
 acoularh5.create_earray('/','time_data', atom=None, title='', filters=None, expectedrows=100000, chunkshape=[256,N_channels], \
                          byteorder=None, createparents=False, obj=data)
 acoularh5.set_node_attr('/time_data','sample_freq', fs)
