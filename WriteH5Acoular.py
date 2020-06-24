@@ -8,10 +8,10 @@ Acoustic Engineegiring - UFSM
 """
 import tables
 import numpy
-import acoular
+
 
 N_channels = # Number of channels
-fs = # Sample rating
+fs = # Sample rate
 data = # data to save in the hdf5 - the shape must be (num_samples, number of channels)
 data = numpy.array(data)
 savename = "DataToAcoular.h5"
@@ -22,6 +22,7 @@ acoularh5.create_earray('/','time_data', atom=None, title='', filters=None, expe
 acoularh5.set_node_attr('/time_data','sample_freq', fs)
 acoularh5.close()
 
+import acoular
 # Acoular data
 
 ts=acoular.TimeSamples(name= savename)
