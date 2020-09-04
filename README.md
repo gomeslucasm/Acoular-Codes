@@ -1,4 +1,4 @@
 # Acoular-Codes
-Scripts to simulate moving sources and process beamforming array data using Acoular python toolbox
+Scripts to simulate moving sources and process beamforming array data using Acoular 🐍Python toolbox.
 
-For more informations about Acoular toobox: http://acoular.org/
+For more informations see Acoular toobox: http://acoular.org/
